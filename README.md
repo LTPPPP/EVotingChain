@@ -34,7 +34,7 @@ A secure, transparent, and tamper-resistant electronic voting system using block
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/blockchain-evoting.git
+git clone https://github.com/LTPPPP/EVotingChain.git
 cd blockchain-evoting
 ```
 
