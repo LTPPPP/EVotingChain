@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<h1>Voter Registration</h1>
+<form action="/api/register_voter" method="post">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <button type="submit">Register as Voter</button>
+</form>
+
+<h1>Candidate Registration</h1>
+<form action="/api/register_candidate" method="post">
+    <input type="text" name="name" placeholder="Candidate Name" required>
+    <input type="text" name="party" placeholder="Political Party" required>
+    <button type="submit">Register as Candidate</button>
+</form>
+{% endblock %}

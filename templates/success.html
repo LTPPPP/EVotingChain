@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Success{% endblock %}
+
+{% block content %}
+<h1>Success</h1>
+<p>{{ message }}</p>
+{% if voter_id %}
+<p>Your Voter ID: {{ voter_id }}</p>
+{% endif %}
+{% if candidate_id %}
+<p>Your Candidate ID: {{ candidate_id }}</p>
+{% endif %}
+<a href="/">Return to Home</a>
+{% endblock %}

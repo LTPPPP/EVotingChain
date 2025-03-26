@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Blockchain E-Voting Home{% endblock %}
+
+{% block content %}
+<h1>Blockchain E-Voting System</h1>
+<div>
+    <h2>Election Overview</h2>
+    <p>Registered Voters: {{ voter_count }}</p>
+    <p>Registered Candidates: {{ candidate_count }}</p>
+
+    <h3>Candidates</h3>
+    <ul>
+        {% for candidate in candidates %}
+        <li>
+            {{ candidate.name }} ({{ candidate.party }})
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
